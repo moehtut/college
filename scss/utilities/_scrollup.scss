@@ -1,0 +1,30 @@
+#scrollUp {
+  z-index: 11;
+  background-color: #0f1112;
+  border-radius: 0;
+  bottom: 50px;
+  color: #ffffff;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  right: 50px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15); }
+  #scrollUp:hover, #scrollUp:focus {
+    background-color: #db4437;
+    color: #ffffff; 
+  }
+  @media only screen and (max-width: 767px) {
+    #scrollUp {
+      font-size: 20px;
+      bottom: 30px;
+      right: 30px;
+      line-height: 32px;
+      width: 35px;
+      height: 35px; } 
+    }

@@ -1,0 +1,318 @@
+// Owl-Carousel Customization
+
+// Showcase Section
+#showcase-section {
+  position: relative;
+  .owl-prev {
+    position: absolute;
+    left: 50px;
+    
+  }
+  .owl-next {
+    position: absolute;
+    right: 50px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 40%;
+  
+    &:hover {
+      background: none !important;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  
+    span {
+      font-size: 4rem;
+      color:$primary-color;
+  
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+  
+    }
+  }
+
+  .owl-dots { 
+    margin-bottom: 20px;
+    .owl-dot {
+      
+      &:focus {
+        outline: none; 
+      }
+
+      span {
+        background: $primary-color;
+      }  
+
+      &:hover {
+        span {
+          background: $secondary-color;
+          @include easeOut();
+        }
+      }
+
+      &:focus {
+        span {
+          background: $secondary-color;
+        }
+      }     
+    }
+  } 
+}
+
+// Courses Section
+#course-section {
+  .owl-prev {
+    left: -50px;
+  }
+  .owl-next {
+    right: -50px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 30%;
+  
+    &:hover {
+      background: none !important;
+      @include easeOut();
+    }
+
+    &:focus {
+      outline: none;
+    }
+  
+    span {
+      font-size: 4rem;
+      color:$secondary-color;
+  
+      &:hover {
+        color: $primary-color;
+        @include easeOut();
+      }
+  
+    }
+  }
+
+  .owl-dots {
+    margin-bottom: 20px;
+    .owl-dot {
+
+      &:focus {
+        outline: none; 
+      }
+
+      span {
+        background: $secondary-color;
+        padding: 0.5rem;
+      }  
+
+      &:hover {
+        span {
+          background: $primary-color;
+        }
+      }
+
+      &:focus {
+        span {
+          background: $primary-color;
+        }
+      }     
+    }
+  } 
+}
+
+// Opinion Section
+#opinion-section {
+  position: relative;
+  .owl-prev {
+    position: absolute;
+    left: 50px;
+    
+  }
+  .owl-next {
+    position: absolute;
+    right: 50px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 40%;
+  
+    &:hover {
+      background: none !important;
+      @include easeOut();
+    }
+
+    &:focus {
+      outline: none;
+    }
+  
+    span {
+      font-size: 4rem;
+      color:$secondary-color;
+  
+      &:hover {
+        color: $primary-color;
+        @include easeOut();
+      }
+  
+    }
+  }
+
+  .owl-dots { 
+    margin-bottom: 20px;
+    .owl-dot {
+      
+      &:focus {
+        outline: none; 
+      }
+
+      span {
+        background: $primary-color;
+      }  
+
+      &:hover {
+        span {
+          background: $secondary-color;
+        }
+      }
+
+      &:focus {
+        span {
+          background: $secondary-color;
+        }
+      }     
+    }
+  } 
+}
+
+// Event Section
+#event-section {
+  .owl-prev {
+    left: -50px;
+  }
+  .owl-next {
+    right: -50px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 30%;
+  
+    &:hover {
+      background: none !important;
+      @include easeOut();
+    }
+
+    &:focus {
+      outline: none;
+    }
+  
+    span {
+      font-size: 4rem;
+      color:$primary-color;
+  
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+  
+    }
+  }
+
+  .owl-dots {
+    margin-bottom: 20px;
+    .owl-dot {
+
+      &:focus {
+        outline: none; 
+      }
+
+      span {
+        background: $primary-color;
+        padding: 0.5rem;
+      }  
+
+      &:hover {
+        span {
+          background: $secondary-color;
+        }
+      }
+
+      &:focus {
+        span {
+          background: $secondary-color;
+        }
+      }     
+    }
+  } 
+}
+
+// Blog Section
+#blog-section {
+  position: relative;
+  .owl-prev {
+    position: absolute;
+    left: 50px;
+    
+  }
+  .owl-next {
+    position: absolute;
+    right: 50px;
+  }
+  .owl-prev, .owl-next {
+    position: absolute;
+    top: 40%;
+  
+    &:hover {
+      background: none !important;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  
+    span {
+      font-size: 4rem;
+      color:$primary-color;
+  
+      &:hover {
+        color: $secondary-color;
+        @include easeOut();
+      }
+  
+    }
+  }
+
+  .owl-dots { 
+    margin-bottom: 20px;
+    .owl-dot {
+      
+      &:focus {
+        outline: none; 
+      }
+
+      span {
+        background: $primary-color;
+      }  
+
+      &:hover {
+        span {
+          background: $secondary-color;
+          @include easeOut();
+        }
+      }
+
+      &:focus {
+        span {
+          background: $secondary-color;
+        }
+      }     
+    }
+  } 
+}
+
+
+

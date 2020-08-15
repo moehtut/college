@@ -1,0 +1,34 @@
+.svg-inline--fa.fa-adjust{
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.darkmode--activated .svg-inline--fa.svg-inline--fa.fa-adjust {
+  color: #fff;
+}
+
+.darkmode-toggle {
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// .darkmode--activated{
+
+//   .darkmode-background {
+//     background-color: $darkmode-bg;
+//   }
+
+//   .welcome-left{
+
+//     p {
+//       color: set-text-color($darkmode-bg);
+//     }
+
+    
+//   }
+
+  
+// }

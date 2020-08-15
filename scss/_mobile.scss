@@ -1,0 +1,1769 @@
+// Widescreens
+
+// Desktop & Laptops
+//Home Page
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  // Header-section
+  #header-section {
+    #navbar-menu {
+      h4 {
+        font-size: 0.8rem;
+      }
+      a{ 
+        font-size: 0.7rem;
+      }
+    }
+    
+  }
+  // Showcase Section
+  #showcase-section {
+    .item {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 2rem;
+      }
+  
+      p {
+        text-transform: capitalize;
+        line-height: 1.3;
+        font-size: 1.3rem;
+      } 
+    }
+      
+  }
+  //Welcome Section
+  #welcome-section {
+    .welcome-left {
+      
+      padding: 0px;
+  
+      h1 {
+        font-size: 2rem;
+        margin: 20px 0px 20px 0px;
+      }
+  
+      p {
+        font-size: 1.1rem;
+      }
+  
+      .btn-outline-primary {
+        width: 40%;
+      }
+    }
+  
+    .welcome-right {
+  
+      img {
+        margin: 50px 0px 0px 100px;
+        width: 250px;
+        height: 250px;
+      }
+    } 
+  }
+  // Course Section 
+  #course-section {
+
+    .course-title {
+      margin: 0.9rem;
+    }
+
+    .card {
+      padding: 8px;
+      margin: 0px 0px 15px 0px;
+      
+      .card-body {
+        padding: 3px !important;
+        margin-bottom: 10px;
+    
+        .card-title {
+          color: $secondary-color;
+          margin-bottom: 6px; 
+          
+        }
+
+        .card-text {
+          font-size: 0.9rem !important;
+          margin-bottom: 6px;
+          padding-bottom: 6px;
+        }
+
+        .sub-title {
+          
+          padding-bottom: 5px !important;
+          margin-bottom: 5px;
+    
+          span.price{
+            padding-left: 320px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+      
+  }
+  // Promise Section
+  #promise-section {
+    position: relative;
+    @include secondary-overlay();
+      
+    img {
+      width: 100%;
+      height: 75vh;
+    }
+
+    .promise-container {
+      .promise {
+        margin-top: 30px;
+      }
+
+      .svg-inline--fa {
+        font-size: 2.3rem !important;
+        margin-bottom: 4px;
+      }
+
+      .promise-title {
+        margin-bottom: 4px;
+        color: $primary-color;
+        font-size: 2.3rem;
+      }
+      .promise-text {
+        margin-top: 8px;
+        color: set-text-color($secondary-overlay);
+        font-size: 1rem;
+      }
+    }
+  }
+  //Opinion Section
+  #opinion-section {
+    .item {
+      .item-content { 
+        z-index: 2;
+  
+        h1 {
+          margin: 40px 0px 20px 0px;
+          font-size: 2rem;
+        }
+        
+        svg.fa-quote-left {
+          font-size: 1.2rem !important;
+          margin-bottom: 10px;
+        }
+    
+        svg.fa-quote-right {
+          font-size: 1.2rem !important;
+          margin-top: 10px;
+        }
+        
+        .quote-text {
+          color: set-text-color($primary-overlay);
+          font-size: 1.2rem;
+        }
+  
+        .student-img {
+          width: 100px !important;
+          height: 100px !important;
+          margin-top: 30px;
+        }
+    
+        .name {
+          margin: 10px 0px 10px 0px;
+          font-size: 1.5rem;
+        }
+  
+        .attribute {
+          font-size: 1.5rem;
+        }
+      }
+    }   
+  }
+  // List Section
+  #list-section {
+    img {
+      width: 100%;
+      height: 65vh;
+    }
+  
+    .list-container {
+      padding-top: 80px;
+  
+      .svg-inline--fa {
+        font-size: 2.5rem !important;
+        color: $primary-color;
+      }
+  
+      .list-number {
+        margin-top: 20px;
+        font-size: 2rem;
+      }
+  
+      .list-title {
+        margin-top: 10px;
+        color: set-text-color($secondary-overlay);
+  
+      }
+      
+    }
+  }
+  // Event Section
+  #event-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .event-title {
+      margin: 1rem;
+      color: $primary-color;
+    }
+  
+    .card {
+      padding: 8px;
+  
+      .card-body {
+        padding: 3px !important;
+  
+        .event-detail {
+          
+          .card-title {
+            color: $primary-color;
+            margin-bottom: 6px;
+            font-size: 1.5rem;           
+          }
+  
+          .card-text {
+            font-size: 0.9rem !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+  
+          .sub-title {    
+            span.location {
+              padding-left: 90px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+  
+        .event-date {
+          .card-title {
+            margin: 6px 0px 6px;
+          }
+    
+          .card-text {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            font-size: 0.9px !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+          .month {
+            font-size: 0.9rem !important;
+          }
+  
+        }
+      }
+    }
+      
+  }
+  // News Section 
+  #news-section {
+    padding-bottom: 30px;
+    .heading{
+      margin: 0.8rem;
+    }
+
+    .flex-left {
+      .card {
+        padding: 6px;
+        background: $card-bg-light !important;
+        
+        .card-text {
+          font-size: 1rem;
+          padding: 0.9rem 0px;
+        }
+      }
+    }
+      
+    .flex-right {
+
+      .news-box {
+        padding: 12px;
+
+        .news-title {
+          padding-top: 3px;
+        }
+
+      }
+    }
+
+  }
+  // Blog Section
+  #blog-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .item {
+      .item-content { 
+      
+        .row {
+          margin-bottom: 100px;
+        }
+        h1 {
+          margin: 120px 0px 50px 0px;
+          font-size: 2rem;
+        }
+  
+        img {
+          width: 200px !important;
+          height: 200px !important;
+        }
+    
+        
+        .blog-title {
+          margin-top: 0px;
+          color: $primary-color;
+          font-size: 2rem;
+    
+          &:hover {
+            color: $secondary-color !important;
+            @include easeOut();
+          }
+        }
+  
+        .blog-description {
+          font-size: 1.1rem;
+        }
+        
+      }
+    }   
+  }
+  
+  // Instructor Section
+  #instructor-section {
+    img {
+      width: 100%;
+      height: 65vh;
+    }
+  
+    .instructor-container {
+      padding-top: 50px; 
+      z-index: 2;
+    }
+  }
+  // Newsletter Section
+  #newsletter-section {
+    img {
+      width: 100%;
+      height: 65vh;
+    }
+  
+    .newsletter-container {
+      padding-top: 30px;
+      z-index: 2;
+      
+      .heading {
+        color: $primary-color;
+      }
+      .text {
+        color: set-text-color($primary-overlay);
+        font-size: 1.1rem;
+      }
+  
+      .subscribe-box {
+        display: flex;
+        
+        padding-top: 20px;
+        padding-left: 100px;  
+      }      
+    }
+  }
+
+  // Footer Section
+  #footer-section {
+    padding: 20px 0px 30px 0px;
+  
+    .footer-container {
+      grid-gap: 0.8rem;
+      h4 {
+        font-size: 1.2rem;
+      }
+      
+      .column1 {
+  
+        p {
+          padding-top: 8px;
+          font-size: 0.9rem;
+        }
+  
+        .btn-outline-primary {
+          border-radius: 10px;
+          width: 170px;
+        }
+  
+        .social-link {
+          padding-top: 8px;
+          font-size: 1.3rem;
+    
+        }
+      }
+  
+      .column2 {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+  
+        a {
+          font-size: 0.9rem;
+        }
+      }
+  
+      .column3 {
+      
+        P {
+          font-size: 0.9rem;
+          
+        }
+        
+        .svg-inline--fa {
+          font-size: 1rem;
+          margin-right: 2px;
+        }
+      }
+  
+      .column4 {
+    
+        p {
+          font-size: 0.9rem;
+        }
+    
+        input[type='email'],input[type='submit'] {
+          border-radius: 50px 50px 50px 50px;
+          padding: 0px;
+          height: 30px;        
+        }
+  
+        .btn-outline-primary {   
+          font-weight: bold;
+          padding: 5px;   
+        }
+      }
+    }
+  
+    .copyright {
+      margin-top: 15px;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}
+//About Page
+@media screen and (min-width: 768px) and (max-width: 1000px){
+  //landing section
+  #landing-section {
+    .landing-container {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  //College section
+  #college-section {
+
+    .college-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .college-right {
+      margin-top: 70px;
+    }
+    
+  }
+  //History section
+  #history-section {
+    .history-right {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+    .history-left{
+      display: none;
+    }
+  }
+  //Vision section
+  #vision-section {
+    .vision-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .vision-right {
+      img {
+        margin-top: 70px;
+      }
+    }
+    
+  }
+  //Goals section
+  #goals-section {
+
+    padding: 20px 10px;
+    .goals-right {
+  
+      padding: 0px;
+  
+    }
+    .goals-left {
+      img {
+        margin-top: 20px;
+      }
+    }
+  
+    // .goals-left {
+  
+    //   img {
+    //     margin: 20px 0px 0px 100px;
+    //     width: 350px;
+    //     height: 350px;
+    //     border: 5px solid $primary-color;
+    //     border-radius: 50%;
+  
+    //     @include secondary-image-hover();
+    //     @include easeOut();
+    //   }
+    // } 
+  }
+  //Team section 
+  #team-section {
+    .container {
+      position: relative;
+      margin: 50px;
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2,350px);
+      grid-auto-rows: minmax(260px,auto);
+      grid-gap: 70px 40px;
+    }
+  
+  }
+}
+
+
+// Tablets & Small Laptops
+//Home Page
+@media screen and (max-width: 768px){
+  
+  // Showcase Section
+  #showcase-section {
+    .item {
+      h1 {
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+      }
+  
+      p {
+        text-transform: capitalize;
+        line-height: 1.3;
+        font-size: 1.1rem;
+      } 
+    }
+      
+  }
+  //Welcome Section
+  #welcome-section {
+    .welcome-left {
+      
+      margin-left: 10px;
+  
+      h1 {
+        font-size: 1.8rem;
+        margin: 20px 0px 20px 0px;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+  
+      .btn-outline-primary {
+        width: 40%;
+      }
+    }
+  
+    .welcome-right {
+  
+      img {
+        margin: 50px 0px 0px 80px;
+        width: 220px;
+        height: 220px;
+      }
+    } 
+  }
+  // Course Section 
+  #course-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .course-title {
+      margin: 0.9rem;
+    }
+
+    .card {
+      padding: 8px;
+      margin: 0px 0px 15px 0px;
+      
+      .card-body {
+        padding: 3px !important;
+        margin-bottom: 10px;
+    
+        .card-title {
+          color: $secondary-color;
+          margin-bottom: 6px; 
+          
+        }
+
+        .card-text {
+          font-size: 0.9rem !important;
+          margin-bottom: 6px;
+          padding-bottom: 6px;
+        }
+
+        .sub-title {
+          
+          padding-bottom: 5px !important;
+          margin-bottom: 5px;
+    
+          span.price{
+            padding-left: 200px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+      
+  }
+  // Promise Section
+  #promise-section {
+      
+    img {
+      width: 100%;
+      height: 70vh;
+    }
+
+    .promise-container {
+     
+      .promise {
+        margin-top: 30px;
+      }
+
+      .svg-inline--fa {
+        font-size: 2.3rem !important;
+        margin-bottom: 2px;
+      }
+
+      .promise-title {
+        margin-bottom: 2px;
+        color: $primary-color;
+        font-size: 2.1rem;
+      }
+      .promise-text {
+        margin-top: 8px;
+        font-size: 1rem;
+        line-height: 1.3;
+      }
+    }
+  }
+  //Opinion Section
+  #opinion-section {
+    .item {
+      .item-content { 
+        z-index: 2;
+  
+        h1 {
+          margin: 60px 0px 20px 0px;
+          font-size: 1.8rem;
+        }
+        
+        svg.fa-quote-left {
+          font-size: 1rem !important;
+          margin-bottom: 10px;
+        }
+    
+        svg.fa-quote-right {
+          font-size: 1rem !important;
+          margin-top: 10px;
+        }
+        
+        .quote-text {
+          color: set-text-color($primary-overlay);
+          font-size: 1.2rem;
+        }
+  
+        .student-img {
+          width: 90px !important;
+          height: 90px !important;
+          margin-top: 30px;
+        }
+    
+        .name {
+          margin: 10px 0px 10px 0px;
+          font-size: 1.5rem;
+        }
+  
+        .attribute {
+          font-size: 1.5rem;
+        }
+      }
+    }   
+  }
+  // List Section
+  #list-section {
+    img {
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .list-container {
+      padding-top: 40px;
+      margin-left: 40px;
+      .svg-inline--fa {
+        font-size: 2.1rem !important;
+      }
+  
+      .list-number {
+        font-size: 1.6rem;
+      }
+  
+      .list-title {
+        margin-top: 10px;
+        font-size: 1.4rem;
+      }
+      
+    }
+  }
+  // Event Section
+  #event-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .event-title {
+      margin: 1rem;
+      color: $primary-color;
+    }
+  
+    .card {
+      padding: 5px;
+  
+      .card-body {
+        padding: 3px !important;
+  
+        .event-detail {
+          
+          .card-title {
+            color: $primary-color;
+            margin-bottom: 8px;           
+          }
+  
+          .card-text {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            font-size: 1rem !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+  
+          .sub-title {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            padding-bottom: 5px !important;
+            margin-bottom: 5px;
+          
+            span.location {
+              padding-left: 14px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+  
+        .event-date {
+          .card-title {
+            margin: 8px 0px 8px;
+          }
+    
+          .card-text {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            font-size: 15px !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+          .month {
+            font-size: 1rem !important;
+          }
+  
+        }
+  
+        
+      }
+    }
+      
+  }
+  // News Section 
+  #news-section {
+    padding-bottom: 20px;
+    .heading{
+      margin: 0.8rem;
+      font-size: 1.8rem;
+    }
+
+    .flex-left {
+      .card {
+        padding: 5px;
+        background: $card-bg-light !important;
+
+        .card-body {
+          padding: 0.8rem 0px 0.8rem 0px;
+        }
+        .card-title {
+          line-height: 1.2;
+          font-size: 1.1rem;
+          padding-bottom: 8px;
+        }
+
+        .card-subtitle {
+          color: #ccc;
+          font-size: 0.9rem;          
+        }
+        .card-text {
+          font-size: 1.1rem;
+          padding: 0.9rem 0px;
+        }
+      }
+    }
+      
+    .flex-right {
+
+      .news-box {
+        padding: 10px;
+
+        .news-title {
+          padding-top: 3px;
+        }
+
+      }
+    }
+
+  }
+  // Blog Section
+  #blog-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .item {
+      .item-content { 
+      
+        .row {
+          margin-bottom: 100px;
+        }
+        h1 {
+          margin: 60px 0px 30px 0px;
+          font-size: 1.8rem;
+        }
+  
+        img {
+          width: 140px !important;
+          height: 140px !important;
+          margin-top: 60px;
+        }
+    
+        
+        .blog-title {
+          margin-top: 10px;
+          color: $primary-color;
+          font-size: 1.6rem;
+        }
+        
+        .published {
+          font-size: 1rem;
+        }
+
+        .blog-description {
+          font-size: 0.9rem;
+        }
+        
+      }
+    }   
+  }
+  // Instructor Section
+  #instructor-section {
+    img {
+      width: 100%;
+      height: 55vh;
+    }
+  
+    .instructor-container {
+      padding-top: 25px; 
+  
+      .heading {
+        color: $secondary-color;
+        font-size: 1.8rem;
+      }
+      .text {
+        color: set-text-color($secondary-overlay);
+        font-size: 1.1rem;
+        margin-top: 20px;
+      }
+  
+      .btn-outline-primary {
+      
+        width: 200px;
+        margin-top: 10px;  
+      }
+  
+      
+    }
+  }
+  // Newsletter Section
+  #newsletter-section {
+    img {
+      width: 100%;
+      height: 80vh;
+    }
+  
+    .newsletter-container {
+      padding-top: 10px;
+  
+      .heading {
+        color: $primary-color;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+      .text {
+        color: set-text-color($primary-overlay);
+        font-size: 1.1rem;
+      }
+  
+      .subscribe-box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-right: 100px;
+        padding-left: 100px;
+        max-width: 700px;
+  
+        input[type="email"]{
+          width: 100%;
+          border-radius: 50px 50px 50px 50px;
+          border: 2px solid $primary-color;
+        }
+  
+        input[type="submit"]{
+          border-radius: 50px 50px 50px 50px;
+          margin-top: 10px;
+          padding: 5px;
+          width: 100%;
+        }
+      } 
+    }
+  }
+
+  // Footer Section
+  #footer-section {
+    padding: 20px 0px 30px 0px;
+  
+    .footer-container {
+      grid-template-columns: repeat(2, 2fr);
+      grid-gap: 0.8rem;
+      h4 {
+        font-size: 1.2rem;
+      }
+      
+      .column1 {
+  
+        p {
+          padding-top: 8px;
+          font-size: 0.9rem;
+        }
+  
+        .btn-outline-primary {
+          border-radius: 10px;
+          width: 170px;
+        }
+  
+        .social-link {
+          padding-top: 8px;
+          font-size: 1.3rem;
+    
+        }
+      }
+  
+      .column2 {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+  
+        a {
+          font-size: 0.9rem;
+        }
+      }
+  
+      .column3 {
+      
+        P {
+          font-size: 0.9rem;
+          
+        }
+        
+        .svg-inline--fa {
+          font-size: 1rem;
+          margin-right: 2px;
+        }
+      }
+  
+      .column4 {
+    
+        p {
+          font-size: 0.9rem;
+        }
+    
+        input[type='email'],input[type='submit'] {
+          border-radius: 50px 50px 50px 50px;
+          padding: 0px;
+          height: 30px;        
+        }
+  
+        .btn-outline-primary {   
+          font-weight: bold;
+          padding: 5px;   
+        }
+      }
+    }
+  
+    .copyright {
+      margin-top: 15px;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}
+//About Page
+@media screen and (max-width: 768px){
+  //landing section
+  #landing-section {
+    .landing-container {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  //College section
+  #college-section {
+
+    .college-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .college-right {
+      margin-top: 70px;
+    }
+    
+  }
+  //History section
+  #history-section {
+    .history-right {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      p {
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 10px;
+      }
+    }
+    .history-left{
+      display: none;
+    }
+  }
+  //Vision section
+  #vision-section {
+    .vision-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .vision-right {
+      img {
+        margin-top: 70px;
+      }
+    }
+    
+  }
+  //Goals section
+  #goals-section {
+
+    padding: 20px 10px;
+    .goals-right {
+  
+      padding: 0px;
+  
+    }
+    .goals-left {
+      img {
+        margin-top: 20px;
+      }
+    }
+  
+    // .goals-left {
+  
+    //   img {
+    //     margin: 20px 0px 0px 100px;
+    //     width: 350px;
+    //     height: 350px;
+    //     border: 5px solid $primary-color;
+    //     border-radius: 50%;
+  
+    //     @include secondary-image-hover();
+    //     @include easeOut();
+    //   }
+    // } 
+  }
+  //Team section 
+  #team-section {
+    .container {
+      position: relative;
+      margin: 50px;
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(2,350px);
+      grid-auto-rows: minmax(260px,auto);
+      grid-gap: 70px 40px;
+    }
+  
+  }
+}
+
+// Smart Phones
+//Home Page
+@media screen and (max-width: 500px){
+  // Header Section 
+  #header-section {
+    .navbar {
+      opacity: 0.9;
+      padding: 4px 16px;
+    }
+
+    a {
+      color: #fff;
+      padding: 0px 10px 0px 0px;
+    }
+
+    #navbar-top{
+      border-bottom : 1px solid $primary-color;
+      padding: 8px 16px 8px 16px;
+
+      .mr-auto {
+        display: none;
+      }
+
+      .ml-auto {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .svg-inline--fa {
+        font-size: 1rem;
+      }
+  
+      a {
+        font-size: 0.8rem;
+      }
+    }
+
+    #navbar-menu{
+
+      h4 {
+        margin: 4px;
+      }
+      .navbar-brand {
+        font-size: 0.7rem;
+      }
+      a {
+        font-size: 0.8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  // Showcase Section
+  #showcase-section {
+    
+    .item {
+      img {
+        width: 100% !important;
+        height: 100vh !important;    
+      }
+      h1 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+  
+      p {
+        text-transform: capitalize;
+        line-height: 1.6;
+        font-size: 1rem;
+      } 
+    }
+      
+  }
+  //Welcome Section
+  #welcome-section {
+    .welcome-left {
+      
+      padding: 0px;
+  
+      h1 {
+        font-size: 1.8rem;
+        margin: 20px 0px 20px 0px;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+  
+      .btn-outline-primary {
+        width: 80%;
+        margin: auto;
+      }
+    }
+  
+    .welcome-right {
+  
+      img {
+        margin: 50px 0px 0px 120px;
+        width: 220px;
+        height: 220px;
+      }
+    } 
+  }
+  // Course Section 
+  #course-section {
+    h1 {
+      font-size: 2rem;
+    }
+    .course-title {
+      margin: 0.9rem;
+    }
+
+    .card {
+      padding: 8px;
+      margin: 0px 0px 15px 0px;
+
+      img {
+        width: 100%;
+        height: 200px;
+      }
+      
+      .card-body {
+        padding: 3px !important;
+        margin-bottom: 10px;
+    
+        .card-title {
+          color: $secondary-color;
+          margin-bottom: 6px; 
+          
+        }
+
+        .card-text {
+          font-size: 0.9rem !important;
+          margin-bottom: 6px;
+          padding-bottom: 6px;
+        }
+
+        .sub-title {
+          
+          padding-bottom: 5px !important;
+          margin-bottom: 5px;
+    
+          span.price{
+            padding-left: 290px;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+      
+  }
+  // Promise Section
+  #promise-section {
+      display: none;
+    
+  }
+  //Opinion Section
+  #opinion-section {
+    width: 100%;
+    height: 80vh;
+    .item {
+      width: 100%;
+      height: 100vh;
+      .item-content { 
+        z-index: 2;
+  
+        h1 {
+          margin: 0px 0px 20px 0px;
+          font-size: 1.6rem;
+        }
+        
+        svg.fa-quote-left {
+          font-size: 0.8rem !important;
+          margin-bottom: 10px;
+        }
+    
+        svg.fa-quote-right {
+          font-size: 0.8rem !important;
+          margin-top: 5px;
+          margin-bottom: 15px;
+
+        }
+        
+        .quote-text {
+          color: set-text-color($primary-overlay);
+          font-size: 1rem;
+        }
+  
+        .student-img {
+          width: 100px !important;
+          height: 100px !important;
+          margin-top: 10px;
+        }
+    
+        .name {
+          margin: 10px 0px 10px 0px;
+          font-size: 1.3rem;
+        }
+  
+        .attribute {
+          font-size: 1.1rem;
+          margin-bottom: 40px;
+        }
+      }
+    }   
+  }
+  // List Section
+  #list-section {
+    display: none;
+  }
+  // Event Section
+  #event-section {
+    h1 {
+      font-size: 1.8rem;
+    }
+    .event-title {
+      margin: 1rem;
+      color: $primary-color;
+    }
+  
+    .card {
+      padding: 5px;
+  
+      .card-body {
+        padding: 3px !important;
+  
+        .event-detail {
+          
+          .card-title {
+            color: $primary-color;
+            margin-bottom: 8px;           
+          }
+  
+          .card-text {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            font-size: 1rem !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+  
+          .sub-title {
+            border-bottom: 2px solid set-text-color($card-bg-dark);
+            padding-bottom: 5px !important;
+            margin-bottom: 5px;
+          
+            span.location {
+              padding-left: 180px;
+              font-size: 0.9rem;
+            }
+          }
+        }
+  
+        .event-date {
+
+          display: flex;
+          .card-title {
+            margin: 8px 0px 8px;
+          }
+    
+          .card-text {
+            border: none;
+            font-size: 15px !important;
+            margin-bottom: 1rem;
+            padding-bottom: 5px;
+          }
+          .month {
+            font-size: 1rem !important;
+            margin-left: 300px;
+            margin-top: 10px;
+          }
+  
+        }
+  
+        
+      }
+    }
+      
+  }
+  // News Section 
+  #news-section {
+    padding-bottom: 20px;
+    .heading{
+      margin: 0.8rem;
+      font-size: 1.8rem;
+    }
+
+    .flex-left {
+      .card {
+        padding: 5px;
+        background: $card-bg-light !important;
+
+        .card-body {
+          padding: 0.8rem 0px 0.8rem 0px;
+        }
+        .card-title {
+          line-height: 1.2;
+          font-size: 1.1rem;
+          padding-bottom: 8px;
+        }
+
+        .card-subtitle {
+          color: #ccc;
+          font-size: 0.9rem;          
+        }
+        .card-text {
+          font-size: 1.1rem;
+          padding: 0.9rem 0px;
+        }
+      }
+    }
+      
+    .flex-right {
+
+      .news-box {
+        padding: 10px;
+
+        .news-title {
+          padding-top: 3px;
+        }
+
+      }
+    }
+
+  }
+  // Blog Section
+  #blog-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .item {
+      .item-content { 
+      
+        .row {
+          margin-bottom: 120px;
+        }
+        h1 {
+          // margin: 150px 0px 30px 0px;
+          margin: auto;
+          font-size: 1.5rem;
+        }
+  
+        img {
+          width: 120px !important;
+          height: 120px !important;
+          margin: 0px;
+        }
+    
+        
+        .blog-title {
+          margin-top: 15px;
+          color: $primary-color;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+        
+        .published {
+          font-size: 1rem;
+          text-align: center;
+          margin: 0 auto;
+        }
+
+        .blog-description {
+          font-size: 0.9rem;
+          text-align: center;
+          margin-top: 20px;
+
+        }
+
+        .btn-outline-primary {
+          width: 200px;
+          margin-left: 60px;
+          margin: auto;
+          margin-top: 20px;
+        }
+        
+      }
+    }   
+  }
+  // Instructor Section
+  #instructor-section {
+    img {
+      width: 100%;
+      height: 40vh;
+    }
+  
+    .instructor-container {
+      padding-top: 40px; 
+  
+      .heading {
+        color: $secondary-color;
+        font-size: 1.6rem;
+      }
+      .text {
+        color: set-text-color($secondary-overlay);
+        font-size: 1rem;
+        margin-top: 10px;
+      }
+  
+      .btn-outline-primary {
+      
+        width: 200px;
+        margin-top: 10px;  
+      }
+  
+      
+    }
+  }
+  // Newsletter Section
+  #newsletter-section {
+    img {
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .newsletter-container {
+      padding-top: 0px;
+  
+      .heading {
+        color: $primary-color;
+        font-size: 1.6rem;
+        margin-top: 40px;
+      }
+      .text {
+        color: set-text-color($primary-overlay);
+        font-size: 1rem;
+      }
+  
+      .subscribe-box {
+        display: inline-block;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-right: 100px;
+        padding-left: 100px;
+        max-width: 700px;
+  
+        input[type="email"]{
+          width: 100%;
+          border-radius: 50px 50px 50px 50px;
+          border: 2px solid $primary-color;
+        }
+  
+        input[type="submit"]{
+          border-radius: 50px 50px 50px 50px;
+          margin-top: 10px;
+          padding: 5px;
+          width: 100%;
+        }
+      } 
+    }
+  }
+
+  // Footer Section
+  #footer-section {
+    padding: 20px 0px 30px 0px;
+  
+    .footer-container {
+      grid-template-columns: repeat(1, 4fr);
+      grid-gap: 0.8rem;
+      h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      
+      .column1 {
+        
+        p {
+          display: none;
+        }
+  
+        .btn-outline-primary {
+          display: none;
+        }
+  
+        .social-link {
+          padding-top: 8px;
+          font-size: 1.3rem;
+          margin: 1rem 0px 1rem 170px;
+        }
+      }
+  
+      .column2 {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          text-align: center;
+        }
+  
+        a {
+          font-size: 0.9rem;
+        }
+      }
+  
+      .column3 {
+        text-align: center;
+
+        P {
+          font-size: 0.9rem;
+        }
+        
+        .svg-inline--fa {
+          font-size: 1rem;
+          margin-right: 2px;
+        }
+      }
+  
+      .column4 {
+        text-align: center;
+        p {
+          font-size: 0.9rem;
+        }
+    
+        input[type='email'],input[type='submit'] {
+          border-radius: 50px 50px 50px 50px;
+          padding: 0px;
+          height: 30px;        
+        }
+  
+        .btn-outline-primary {   
+          font-weight: bold;
+          padding: 5px;   
+        }
+      }
+    }
+  
+    .copyright {
+      margin-top: 15px;
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+}
+//About Page
+@media screen and (max-width: 500px){
+  //landing section
+  #landing-section {
+    .landing-container {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+  //College section
+  #college-section {
+    .college-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    
+  }
+  //History section
+  #history-section {
+    .history-right {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .history-left {
+      display: none;
+    }
+    
+  }
+  //Vision section
+  #vision-section {
+    .vision-left {
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+    .vision-right {
+      display: none;
+    }
+    
+  }
+  //Goals section
+  #goals-section {
+    .goals-left {
+      display: none;
+    }
+  }
+  //Team section 
+  #team-section {
+    display: none;
+  
+  }
+}
+

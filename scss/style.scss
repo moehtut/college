@@ -1,0 +1,26 @@
+
+
+// @import 'bootstrap/bootstrap';
+// @import 'variables';
+
+// *******************
+//    Utilities
+// *******************
+@import 'utilities/color';
+@import 'utilities/mixins';
+@import 'utilities/global';
+@import 'utilities/darkmode';
+@import 'utilities/preloader';
+@import 'utilities/scrollup';
+@import 'utilities/carousel';
+
+
+
+// *******************
+//    Stylesheet
+// *******************
+@import 'stylesheet/home';
+@import 'stylesheet/about';
+@import 'stylesheet/contact';
+@import 'stylesheet/register';
+@import 'stylesheet/responsive';

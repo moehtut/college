@@ -1,0 +1,552 @@
+// Landing Section
+#landing-section {
+  
+  position: relative;
+  @include primary-overlay();
+  
+  img {
+    width: 100%;
+    height: 55vh;
+  }
+  .landing-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .content {
+      padding-top: 5rem;
+
+      h1,p {
+        color: $primary-color;
+      }
+      h1 {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+// College Section
+#college-section {
+
+  background: #fff;
+  padding: 20px 0px 30px 0px;
+
+  .college-left {
+    
+    padding: 0px;
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+      color: $primary-color;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: set-text-color(#fff);
+    }
+
+  }
+
+  // .college-right {
+
+  //   img {
+  //     margin: 20px 0px 0px 100px;
+  //     width: 350px;
+  //     height: 350px;
+  //     border: 5px solid $primary-color;
+  //     border-radius: 50%;
+
+  //     @include secondary-image-hover();
+  //     @include easeOut();
+  //   }
+  // } 
+}
+
+// History Section
+#history-section {
+
+  background: #fff;
+  padding: 20px 0px 30px 0px;
+
+  .history-right {
+    
+    padding: 0px;
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+      color: $primary-color;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      color: set-text-color(#fff);
+    }
+    svg.fa-check-square {
+      color: $primary-color;
+    }
+
+  }
+
+  // .history-left {
+
+  //   img {
+  //     margin: 20px 0px 0px 100px;
+  //     width: 350px;
+  //     height: 350px;
+  //     border: 5px solid $primary-color;
+  //     border-radius: 50%;
+
+  //     @include secondary-image-hover();
+  //     @include easeOut();
+  //   }
+  // } 
+}
+
+// Vision Section
+#vision-section {
+
+  background: #fff;
+  padding: 20px 0px 30px 0px;
+
+  .vision-left {
+    
+    padding: 0px;
+
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+      color: $primary-color;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: set-text-color(#fff);
+    }
+
+  }
+
+  // .vision-right {
+
+  //   img {
+  //     margin: 20px 0px 0px 100px;
+  //     width: 350px;
+  //     height: 350px;
+  //     border: 5px solid $primary-color;
+  //     border-radius: 50%;
+
+  //     @include secondary-image-hover();
+  //     @include easeOut();
+  //   }
+  // } 
+}
+
+// Goals Section
+#goals-section {
+
+  background: #fff;
+  margin: 20px 0px 0px 0px;
+
+  .goals-container {
+    h1 {
+      color: $primary-color;
+    }
+  }
+
+  .goals-right {
+
+    padding: 0px;
+
+    .card {
+      border: 1px solid $primary-color;
+      background: #fff;
+      margin-bottom: 3px;
+
+      button {
+        text-decoration: none;
+        color: set-text-color($primary-color);
+        font-weight: bold;;
+      }
+
+      .card-header {
+        background: $primary-color;
+      }
+      .card-body {
+        font-size: 1rem;
+        color: set-text-color(#fff);
+      }
+    }
+
+
+  }
+
+  // .goals-left {
+
+  //   img {
+  //     margin: 20px 0px 0px 100px;
+  //     width: 350px;
+  //     height: 350px;
+  //     border: 5px solid $primary-color;
+  //     border-radius: 50%;
+
+  //     @include secondary-image-hover();
+  //     @include easeOut();
+  //   }
+  // } 
+}
+
+
+// Team Section 
+#team-section {
+  padding: 10px;
+  background-color: #060c21;
+  padding-bottom: 20px;
+  
+  .team-title {
+    margin: 1rem;
+    color: $secondary-color;
+  }
+  .container {
+    position: relative;
+    margin: 50px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-auto-rows: minmax(260px,auto);
+    grid-gap: 70px 40px;
+  }
+  .profile-card {
+    position: relative;
+    height: 450px;
+    background:$profile-card2;
+    // border: 1px solid #000;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: -2px;
+      bottom: -2px;
+      left: -2px;
+      background: #fff;
+      z-index: -1;
+      transform: skew(3deg, 3deg);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: rgba(255,255,255,0.05);
+      z-index: 0;
+    }
+
+    &:nth-child(1)::before{
+      background:linear-gradient(315deg,$primary-color,$secondary-color);
+    }
+    &:nth-child(2)::before{
+      background:linear-gradient(315deg,#ff0057,#e75d0c);
+    }
+    &:nth-child(3)::before{
+      background:linear-gradient(315deg,#89ff00,#00bcd4);
+    }
+    &:nth-child(4)::before{
+      background:linear-gradient(315deg,#e91e61,#5d02ff);
+    }
+    &:nth-child(5)::before{
+      background:linear-gradient(315deg,#ff0000,#ffc107);
+    }
+    &:nth-child(6)::before{
+      background:linear-gradient(315deg,#2b1503,#0e11bd);
+    }
+    svg.fa-quote-left {
+      position: absolute;
+      top: 45px;
+      left: 20px;
+    }
+    svg.fa-quote-right {
+      position: absolute;
+      bottom: 45px;
+      right: 20px;
+    }
+
+    svg.fa-quote-left,svg.fa-quote-right {
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+      color: rgba(255,255,255,0.05);
+      transition: 0.5s;
+    }
+    &:hover svg.fa-quote-left{
+      top: 5px;
+    }
+    &:hover svg.fa-quote-right{
+      bottom: 5px;
+    }
+  
+    .content {
+      position: relative;
+
+      .profile-img {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 5px solid $primary-color;
+        top: 20px;
+        left: 200px;
+
+        @include secondary-image-hover();
+        @include easeOut();
+      }
+
+      .profile-detail {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 250px;
+
+        .name {
+          margin-top: 25px;
+          color: set-text-color($profile-card2);
+        }
+        .education {
+          margin-bottom: 25px;
+          color: set-text-color($profile-card2);
+        }
+        .social-link {       
+          a {
+            text-decoration: none;
+            padding-left: 20px;
+            z-index: 1;
+            
+          }
+          .svg-inline--fa{
+            font-size: 2rem;
+            color: $secondary-color;
+            &:hover {
+              color: $primary-color;
+              @include easeOut;
+            }
+          }
+        }
+        
+      }
+
+      
+    }  
+
+  }
+  
+
+}
+
+// Partner Section 
+#partner-section {
+  padding: 10px;
+  background-color: #fff;
+  padding-bottom: 20px;
+  height: 400px;  
+  
+  img {
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    text-align: center;
+  }
+  
+
+}
+
+// contact Section
+#contact-section {
+
+  background: #fff;
+  padding: 20px 0px 30px 0px;
+
+  h3 {
+    margin: 20px 0px 20px 0px;
+    color: $primary-color;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  .contact-left {
+
+    .brand {
+      margin-top: 30px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: set-text-color(#fff);
+      &:hover {
+        color: $primary-color;
+        @include easeOut;
+      }
+    }
+    
+    P {
+      font-size: 1rem;
+    }
+    
+    .svg-inline--fa {
+      font-size: 1.3rem;
+      margin-right: 5px;
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+        @include easeOut;
+      }
+    }
+  }
+
+  .contact-right {
+
+    input[type="text"],input[type="submit"],textarea {
+      border: 2px solid $primary-color;
+      border-radius: 10px;
+      padding: 20px 10px;
+
+    }
+
+    input[type="submit"]{
+      border-radius: 5px;
+      padding: 5px;
+      width: 50%;
+    }
+    .btn-outline-primary {
+      font-weight: bold;
+      color: set-text-color(#fff);
+
+      &:hover {
+        @include set-background($primary-btn-hover);
+        @include easeOut();
+      }
+      &:active {
+        outline-width: none;
+      }
+      
+    }
+
+  }
+}
+
+#cc {
+  .container {
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,260px);
+    grid-auto-rows: minmax(260px,auto);
+    grid-gap: 0 40px;
+  
+  }
+  .container .box {
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  
+  .container .box::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: #fff;
+    transform: skew(5deg,2deg);
+    z-index: -1;
+  }
+  .container .box:nth-child(1)::before {
+    background: linear-gradient(315deg, #ff0047, #e64a19);
+  }
+  .container .box:nth-child(2)::before {
+    background: linear-gradient(315deg, blue, yellow);
+  }
+  .container .box:nth-child(3)::before {
+    background: linear-gradient(315deg, white, gold);
+  }
+  .container .box:nth-child(4)::before {
+    background: linear-gradient(315deg, green, pink);
+  }
+  
+  .container .box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .content {
+    position: relative;
+    padding: 20px;
+  }
+  .content h2 {
+    position: absolute;
+    top: -60px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 10rem;
+    color: rgba(255,255,255,0.5);
+    transition: 0.5s;
+  }
+  .box:hover .content h2 {
+    top: -140px;
+  }
+  
+  .box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+  }
+  .box .content p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .box .content a {
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .box:hover .content a {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+  .box:hover .content a:hover {
+    background: #fff;
+    color: #000;
+  }
+}
