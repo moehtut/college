@@ -1,0 +1,390 @@
+// Landing Section
+#landing-section {
+  position: relative;
+  @include light-overlay();
+  width: 100%;
+  height: 70vh;
+  // image background
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    
+  .landing-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    .content {
+      padding-top: 5rem;
+
+      h1 {
+        text-transform: uppercase;
+      }
+
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}
+
+// College Section
+#college-section {
+  padding:30px 0px;
+
+  .section-heading .line::after {
+    width: 50%;
+    left: 0;
+    margin-left: 0px; 
+  }
+
+  .college-left {
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+  }
+  .college-right {
+
+    img {
+      width: 400px;
+      height: 400px;
+      border: 5px solid $primary;
+      border-radius: 50%;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+  } 
+
+}
+
+// History Section
+#history-section {
+  padding:30px 0px;
+
+  .section-heading .line::after {
+    width: 35%;
+    left: 0;
+    margin-left: 0px; 
+  }
+
+  .history-right {
+    
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-left: 5px;
+    }
+
+    svg.fa-check-circle {
+      margin: 5px 5px 0 0;
+      font-size: 1.5rem;
+      color: $primary;
+
+      &:hover {
+        color: $dark;
+        @include easeOut();
+      }
+    }
+
+  }
+
+  .history-left {
+
+    img {
+      width: 400px;
+      height: 400px;
+      border: 5px solid $primary;
+      border-radius: 50%;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+
+  
+  } 
+
+}
+
+// Vision Section
+#vision-section {
+  padding: 30px 0px;
+  .section-heading .line::after {
+    width: 30%;
+    left: 0;
+    margin-left: 0px; 
+  }
+
+  .vision-left {
+    h1 {
+      font-size: 2rem;
+      margin: 20px 0px 20px 0px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+  }
+
+  .vision-right {
+
+    img {
+
+      width: 400px;
+      height: 400px;
+      border: 5px solid $primary;
+      border-radius: 50%;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+  }
+}
+
+// Goals Section
+#goals-section {
+  padding: 30px 0px;
+  h1 {
+    font-size: 2rem;
+  }
+  .section-heading .line::after {
+    width: 100%;
+    left: 0;
+    margin-left: 0px; 
+  }
+
+  .goals-text {
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
+
+  .goals-right {
+    margin-right: 80px;
+
+    .card {
+      border: 1px solid $primary;
+      background: $bg-card;
+      margin-bottom: 3px;
+
+      .card-header {
+        padding: 0px;
+      }
+
+      .btn-link {
+        text-decoration: none;
+        background: $primary;
+        color: set-text-color($bg-card);
+        font-weight: bold;
+      
+        &:focus {
+          outline: none;
+        }
+      }
+
+      
+      .card-body {
+        font-size: 1rem;
+        color: set-text-color($bg-card);
+      }
+    }
+
+
+  }
+
+  .goals-left {
+
+    img {
+      width: 350px;
+      height: 350px;
+      border: 5px solid $primary;
+      border-radius: 50%;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+  }
+}
+
+// Team Section
+#team-section {
+  padding: 30px 0;
+
+  .swiper-container {
+    padding-bottom: 250px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+  }
+
+  .section-heading .line {
+    width: 50%; 
+  }
+
+  .section-heading .line::after {
+    width: 55%;
+    left: 0;
+    margin-left: 150px; 
+  }
+
+  .swiper-slide {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative !important;
+
+  }
+
+  .swiper-slide-active {
+    margin-left: 50px;
+  }
+
+  .swiper-slide .profile-card {
+    position: absolute !important; 
+    width: 300px;
+    background: $bg-card;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $bg-button;
+  }
+  
+  .swiper-slide .profile-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(180deg, $primary,$dark);
+    transform: skew(5deg,5deg);
+    z-index: -10;
+  }
+  
+  .swiper-slide .profile-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba($primary,  0.4);
+  }
+  
+  .content {
+    // position: relative;
+    padding: 20px;
+
+    svg.fa-quote-left {
+      position: absolute;
+      top: 45px;
+      left: 20px;
+    }
+    svg.fa-quote-right {
+      position: absolute;
+      bottom: 45px;
+      right: 20px;
+    }
+
+    svg.fa-quote-left,svg.fa-quote-right {
+      margin: 0;
+      padding: 0;
+      font-size: 3rem;
+      color: rgba(255,255,255,0.08);
+      transition: 0.5s;
+      z-index: 1;
+    }
+    
+    &:hover svg.fa-quote-left{
+      top: 5px;
+    }
+    &:hover svg.fa-quote-right{
+      bottom: 5px;
+    }
+
+    .profile-img {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 5px solid $primary;
+      top: 20px;
+      left: 165px;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+
+    .profile-detail {
+      // position: absolute;
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+
+      .name {
+        margin-top: 25px;
+        font-size: 1rem;
+      }
+      .education {
+        margin-bottom: 25px;
+        font-size: 1rem;
+      }
+      .social-link { 
+        z-index: 1;      
+              
+        a {
+          text-decoration: none;
+          padding-left: 20px;
+        }
+        .svg-inline--fa{
+          font-size: 2rem;
+          color: $white;
+          &:hover {
+            color: $dark;
+            @include easeOut;
+          }
+        }
+      }
+      
+    }
+
+      
+    
+  }
+}
+
+// Partner Section
+#partner-section {
+  width: 100%;
+  height: 30vh;
+  margin: 30px 0;
+
+  .swiper-container {
+    .swiper-slide{
+      text-align: center;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+}

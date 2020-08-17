@@ -1,0 +1,1029 @@
+#header-section {
+  overflow:hidden;
+  // Header
+  .bg-dark {
+  background: #222627 !important;
+  }
+
+  .navbar {
+    opacity: 0.9;
+    padding: 4px 16px;
+  }
+  
+  a {
+    color: #ffffff;
+    padding: 0px 15px 0px 15px;
+    font-size: 1rem;
+  }
+
+  .active {
+    a{
+      border-bottom: 3px solid $white;
+      box-sizing: border-box;  
+      // color: $dark !important;
+    }
+  }
+  
+  #navbar-top{
+    border-bottom : 2px solid $primary;
+    padding: 10px 16px 10px 16px;
+
+    .svg-inline--fa {
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+
+    a {
+      font-size: 0.9rem;
+      &:hover {
+        color: $hover;
+        @include easeOut();
+      }
+    }
+
+  }
+  .stuck {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  #navbar-menu{
+    background-color:$primary !important;
+    z-index: 10;
+  
+    h4 {
+      margin: 15px 0;
+    }
+
+    .navbar-brand {
+      font-size: 1rem;
+    }
+
+    a {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 5px;
+
+      &:hover{
+        border-bottom : 3px solid $white;
+        color: $dark;
+      }
+    }
+
+    .navbar-toggler{
+      border: 1px solid $white;  
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        border-radius: 15px 15px 15px 15px;
+        border: 1px solid $white;
+        background-color: $dark;  
+        @include easeOut();
+      }
+    }
+  }
+
+  
+}
+
+// Showcase Secton
+#showcase-section {
+  border-bottom: 2px solid $primary;
+
+  .swiper-container {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .swiper-slide{
+    position: relative;
+    @include light-overlay();
+    background-position: center;
+    background-size: cover;
+    
+    .swiper-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      z-index: 2;
+  
+      h1 {
+        margin-top: 150px;
+        margin-bottom: 20px;
+        line-height: 1.1;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+      }
+  
+      p {
+        text-transform: capitalize;
+        color: $white;
+        line-height: 1.5;
+        font-size: 1.5rem;
+        margin: 0px 100px;
+      } 
+  
+    }
+  }
+
+  
+}
+
+// Welcome Section
+#welcome-section {
+  border-bottom: 2px solid $primary;
+  padding: 30px 0px;
+
+  .section-heading .line::after {
+    width: 70%;
+    left: 0;
+    margin-left: 0px; 
+  }
+
+  .welcome-left {
+    
+    h1 {
+      font-size: 2rem;
+      margin-bottom:20px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .btn-outline-primary {
+      padding: 10px 30px;
+      color: set-text-color($bg-body);
+      width: 30%;
+      font-weight: bold;
+      background: $primary;
+
+      &:hover {
+        // border: 2px solid $secondary;
+        @include set-background($dark);
+        @include easeOut();
+      }
+    }
+  }
+
+  .welcome-right {
+
+    img {
+      margin-left: 150px;
+      width: 350px;
+      height: 350px;
+      border: 5px solid $primary;
+      border-radius: 50%;
+
+      @include primary-image-hover();
+      @include easeOut();
+    }
+  } 
+}
+
+// course Section
+#course-section {
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::after {
+      content: 'Popular Courses';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 3rem;
+      color: $white;
+      border-bottom: 2px solid $primary;
+      filter: saturate(2);
+    }
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @include light-overlay();
+  }
+  .swiper-slide {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide-active {
+    margin-left: 50px;
+  }
+
+  .card {
+    padding: 8px;
+    background: $bg-card !important;
+    
+    .card-body {
+      padding: 0px !important;
+
+      .sub-title {
+        color: $white;
+        padding: 5px !important;
+        margin: 5px 0;
+        background-color: $primary;
+        font-size: 1rem;
+      }
+
+      .card-title {
+        margin-bottom: 8px;
+
+      }
+
+      .card-text {
+        border-bottom: 2px solid $primary;
+        font-size: 1rem !important;
+        padding-bottom: 5px;
+      }
+
+      .btn-outline-primary {
+        padding: 10px 30px;
+        background: $primary;
+        font-weight: bold;
+        color: set-text-color($bg-card);
+        &:hover {
+          // border: 2px solid $secondary;
+          @include set-background($dark);
+          @include easeOut();
+        }
+      }
+    }
+  }
+
+  
+}
+
+// Promise Section
+#promise-section {
+  position: relative;
+  padding: 30px 0;
+  width: 100%;
+  height: 70vh;
+  border-bottom: 2px solid $primary;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  @include light-overlay();
+
+  .promise-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    margin-top: 60px;
+    .fa-stack {
+      margin-top: 25px;
+      font-size: 2.5rem;
+      color: $primary;
+
+      &:hover {
+        color: $white;
+        @include easeOut();
+
+        .fa-stack-1x {
+          color: $primary;
+          @include easeOut();
+
+        }
+      }
+    }
+    
+    .fa-stack-1x {
+      font-size: 2rem !important;
+      color: $white;
+    }
+
+    .promise-title {
+      margin-top: 8px;
+      color: set-text-color($bg-body);
+      font-size: 2.5rem;
+    }
+
+    .promise-text {
+      color: $white;
+      margin-top: 8px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Opinion Section
+#opinion-section {
+  border-bottom: 2px solid $primary;
+  
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide{
+    
+    position: relative;
+    @include light-overlay();
+    background-position: center;
+    background-size: cover;
+
+    .swiper-content { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      z-index: 2;
+
+      h1 {
+        margin: 30px;
+        line-height: 1.1;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+      }
+      
+      svg.fa-quote-left {
+        font-size: 1.5rem !important;
+        color: $primary;
+        margin-bottom: 30px;
+      }
+  
+      svg.fa-quote-right {
+        font-size: 1.5rem !important;
+        color: $primary;
+        margin-top: 30px;
+      }
+      
+      .quote-text {
+        color: set-text-color($overlay);
+        font-size: 1.3rem;
+        text-align: center;
+      }
+
+      .student-img {
+        width: 140px !important;
+        height: 140px !important;
+        border-radius: 50%;
+        margin-top: 50px;
+        border: 5px solid $primary;
+
+        @include primary-image-hover();
+        @include easeOut();
+      }
+  
+      .name {
+        margin: 30px 0px 20px 0px;
+        font-size: 2rem;
+        color: $white;
+        font-weight: bolder;
+
+      }
+
+      .attribute {
+        font-size: 2rem;
+        color: set-text-color($overlay);
+      }
+    }
+  }
+
+  
+}
+
+// List Section
+#list-section {
+  padding: 30px 0px;
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border-bottom: 2px solid $primary;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  @include light-overlay();
+
+  .list-container {
+    margin-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .fa-stack {
+      font-size: 2.5rem;
+      color: $primary;
+      &:hover {
+        color: $white;
+        @include easeOut();
+
+
+        .fa-stack-1x {
+          color: $primary;
+          @include easeOut();
+
+        }
+      }
+    }
+    
+    .fa-stack-1x {
+      font-size: 2rem !important;
+      color: $white;
+    }
+
+    .list-number {
+      margin-top: 25px;
+      font-size: 50px;
+      color: set-text-color($bg-body);
+    }
+
+    .list-title {
+      margin-top: 10px;
+      color: set-text-color($bg-body);
+    }
+    
+  }
+
+}
+
+// event Section
+#event-section {
+  
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    &::after {
+      content: 'Up Coming Events';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 3rem;
+      color: $white;
+      border-bottom: 2px solid $primary;
+      filter: saturate(2);
+    }
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+
+    @include light-overlay();
+  }
+
+  .swiper-slide {
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide-active {
+    margin-left: 50px;
+  }
+
+  .card {
+    width: 400px !important;
+    padding: 8px;
+    background: $bg-card !important;
+
+    .card-body {
+      padding: 0px !important;
+
+      .event-detail {  
+
+        .card-title {
+          margin-bottom: 8px;  
+        }
+
+        .card-text {
+          border-bottom: 2px solid $primary;
+          font-size: 1rem !important;
+          padding-bottom: 5px;
+        }
+
+        .sub-title {
+          color: $white;
+          border-bottom: 2px solid $primary;
+          padding: 5px;
+          margin: 10px 0px;
+          background-color: $primary;
+        }
+      }
+
+      .event-date {
+        height: 40px;
+        line-height: 40px;
+        .day ,.month{
+          color: $primary;
+        }
+
+        .month {
+          border-bottom: 2px solid $primary;
+          font-size: 15px !important;
+          margin-bottom: 0.5rem;
+          font-size: 1rem !important;
+        }
+
+      }
+
+      .btn-outline-primary {
+        padding: 10px 30px;
+        background: $primary;
+        font-weight: bold;
+        color: set-text-color($bg-card);
+
+        &:hover {
+          // border: 2px solid $secondary;
+          @include set-background($dark);
+          @include easeOut();
+        }
+      }
+    }
+  }
+
+  
+}
+
+// News Section 
+#news-section {
+  // background: $bg-body;
+  // @include secondary-overlay();
+  border-bottom: 2px solid $primary;
+  position: relative;
+  text-align: left;
+  padding: 30px 0;
+
+  .section-heading .line {
+    width: 81%; 
+  }
+
+  .section-heading .line::after {
+    width: 30%;
+    left: 0;
+    margin-left: 380px; 
+  }
+
+  .news-left {
+
+    .card {
+      padding: 10px;
+      border: 1px solid $bg-button;
+      background: $bg-card !important;
+
+      .card-body{
+        padding: 10px 0; 
+      }
+      .card-title {
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        border-bottom: 2px solid $primary;
+        margin-bottom: 20px;
+
+        &:hover {
+          color: $primary;
+          @include easeOut();
+        }
+      }
+
+      .card-subtitle {
+        background: $primary;
+        padding: 5px;
+        color: #ccc;
+        font-size: 1rem;          
+      }
+      .card-text {
+        font-size: 1.1rem;
+        padding: 1rem 0px;
+        line-height: 1.5;
+        border-bottom: 2px solid $primary;
+      }
+
+      .btn-outline-primary {
+        background: $primary;
+        padding: 10px 30px;
+        font-weight: bold;
+        color: set-text-color($bg-card);
+
+        &:hover {
+          @include set-background($dark);
+          @include easeOut();
+        }
+      }
+    }
+  }
+    
+  .news-right {
+    padding: 10px 0;
+
+    .news-box {
+      border-bottom: 2px solid $primary;
+      
+      a {
+        text-decoration: none;
+      }
+      
+      .news-title {
+        margin: 5px 0px;
+      }
+
+      .news-text {
+        margin-bottom: 5px;
+      }
+
+      .published {      
+        margin-bottom: 5px;
+      }
+
+      .more {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+
+        &:hover {
+          color: $white;
+          border-bottom: 2px solid $white;
+
+        }
+      }
+
+    }
+  }
+
+}
+
+// Blog Section
+#blog-section {
+  border-bottom: 2px solid $primary;
+  
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide{
+    
+    position: relative;
+    @include light-overlay();
+    background-position: center;
+    background-size: cover;
+
+    .swiper-content { 
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;  
+      z-index: 2;
+
+      h1 {
+        margin: 20px 0px 100px 0px;
+        line-height: 1.1;
+        font-size: 2.5rem;
+        text-transform: capitalize;
+      }
+
+      img {
+        width: 300px !important;
+        height: 300px !important;
+        margin-right: 40px;
+        border: 5px solid $primary;
+        border-radius: 50%;
+
+        @include primary-image-hover();
+        @include easeOut();
+      }
+  
+      .blog-title {
+        margin-top: 30px;
+        font-size: 2rem;
+      }
+
+      .blog-description {
+        color: $white;
+        font-size: 1.2rem;
+      }
+  
+      .published {
+        color: #ccc;
+      }
+      
+      .btn-outline-primary {
+        padding: 10px 30px;
+        background: $primary;
+        font-weight: bold;
+        width: 30%;
+        color: set-text-color($overlay);
+
+        &:hover {
+          // border: 2px solid $secondary;
+          @include set-background($dark);
+          @include easeOut();
+        }
+        
+      }
+    }
+  }
+
+  
+}
+
+// Instructor Section
+#instructor-section {
+  width: 100%;
+  height: 50vh;
+  border-bottom: 2px solid $primary;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  @include light-overlay();
+
+  .section-heading .line {
+    width: 100%; 
+  }
+
+  .section-heading .line::after {
+    width: 100%;
+    left: 0;
+    margin-left: 0px; 
+  }
+    
+  .instructor-container {
+    padding: 30px 0px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    
+    .text {
+      color: $white;
+      font-size: 1.3rem;
+    }
+
+    .btn-outline-primary {
+      font-weight: bold;
+      padding: 10px 30px;
+      background: $primary;
+      width: 40%;
+      color: set-text-color($overlay);
+      margin-top: 20px;
+      &:hover {
+        // border: 2px solid $secondary;
+        @include set-background($dark);
+        @include easeOut();
+      }
+      
+    }
+
+    
+  }
+
+}
+
+// Newsletter Section
+#newsletter-section {
+  padding: 30px 0 50px;
+  width: 100%;
+  height: 50vh;
+  
+  // image background
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+
+  .newsletter-container {
+ 
+    .section-heading .line::after {
+      width: 50%;
+      left: 0;
+      margin-left: 230px; 
+    }
+
+    .text {
+      font-size: 1.3rem;
+    }
+
+    input[type="email"],input[type="submit"]{
+      display: inline-block;
+      width: 50%;
+    }
+
+    input[type="email"]{
+      margin-bottom: 20px;
+    }
+    
+    input[type="submit"]{
+      background-color: $primary;
+    }
+
+    .btn-outline-primary {   
+
+      font-weight: bold;
+      color: set-text-color($bg-body);
+      &:hover {
+        // border: 2px solid $border2;
+        @include set-background($dark);
+        @include easeOut();
+      }
+      
+    }
+  }
+
+}
+
+// Footer Section
+#footer-section {
+  background: #191c1d;
+  padding: 30px 0px;
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    
+    .column1 {
+
+      .brand h4{
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+          @include easeOut();
+        }
+      }
+
+      p {
+        padding-top: 10px;
+        font-size: 1rem;
+      }
+
+      .btn-outline-primary {
+        font-weight: bold;
+        padding: 10px 30px;
+        width: 100%;
+        background: $primary;
+        color: set-text-color($bg-body);
+
+        &:hover {
+          // border: 2px solid $border2;
+          @include set-background($dark);
+          @include easeOut();
+        }
+      }
+    
+      .svg-inline--fa.fa-facebook-square {
+        color: #3B5998;
+      }
+      .svg-inline--fa.fa-twitter {
+        color: #1DA1F2;
+      }
+      .svg-inline--fa.fa-linkedin {
+        color: #2867B2;
+      }
+      .svg-inline--fa.fa-instagram {
+        color: #aa2b55;
+      }
+      .social-link {
+        padding-top: 20px;
+  
+        .svg-inline--fa {
+          margin: 0 3rem 0 0;
+          font-size: 2rem;
+
+          &:hover {
+            transform: scale(1.3);
+            @include easeOut();
+          }
+
+        }
+      }
+    }
+
+    .column2 {
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      h4 {
+        margin-bottom: 13px;
+        color: $primary;
+      }
+
+      a {
+        text-align: left;
+        font-size: 1rem;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary;
+          @include easeOut();
+        }
+      }
+    }
+
+    .column3 {
+      h4 {
+        margin-bottom: 15px;
+        color: $primary;
+      }
+    
+      a {
+        text-decoration: none;
+        &:hover {
+          color: $primary;
+          @include easeOut;
+        }
+      }
+      
+      P {
+        font-size: 1rem;
+        
+      }
+      
+      .svg-inline--fa {
+        font-size: 1.3rem;
+        margin-right: 5px;
+        color: $primary;
+      }
+    }
+
+    .column4 {
+      h4 {
+        margin-bottom: 15px;
+        color: $primary;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+  
+      input[type='email'],input[type='submit'] {
+        width: 100%;
+        margin-bottom: 10px;
+        color: set-text-color($bg-body);
+      }
+
+      .btn-outline-primary {   
+        font-weight: bold;
+        background: $primary;
+
+        &:hover {
+          // border: 2px solid $border2;
+          @include set-background($dark);
+          @include easeOut();
+        }       
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 15px;
+
+    span {
+      color: $primary;
+    }
+    .svg-inline--fa {
+      color: $primary;
+    }
+
+  }
+
+}
