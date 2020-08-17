@@ -364,7 +364,7 @@ $(document).ready(function(){
   // Partner Swiper
   var partnerSwiper = new Swiper('.partner-swiper',{
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     // autoHeight: true,
     lazy: true,
 
@@ -391,7 +391,8 @@ $(document).ready(function(){
       },
       576: {
         slidesPerView: 2,
-      }
+      },
+
     },
   
   })
